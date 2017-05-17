@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title>world</title>
+ 
+    
+    <style>
+        .container {
+            margin: auto;
+            width: 58%;
+            border: 3px solid #73AD21;
+            height: 60%;
+            padding: 20px;
+        }
+    
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="page-header">
+        <h1 style="text-align: center">Countries Map Guess</h1>
+    </div>
+    
+    <div class="container">
+        
+    
+    
+    <script type="text/javascript" src="jquery.js"></script>
+    <div>
+        <button style="height:30px;width:300px" onclick="myFunction()">Click Me To Get The Question</button>
+    
+        <h2 id="demo"></h2>
+    
+        <script>
+            var countries = ["China", "Argentina", "Japan", "Australia",
+                "India", "Indonesia", "Iraq", "Italy",
+                "Brzail", "Egpyt", "France", "Mexico",
+            ];
+    
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Please  Guess  " + countries.shift();
+            }
+        </script>
+    </div>
+
+    
+
+    <table border="0px" width=70%>
+        <tr>
+            <td><img id="imgArgentina" src="images/argentina.png" /></td>
+            <td><img id="imgAus" src="images/aus.png" /></td>
+            <td><img id="imgBrzail" src="images/brzail.png" /></td>
+            <td><a href="https://en.wikipedia.org/wiki/China" target="_blank"/><img id="imgChina" src="images/china.png" /></a></td>
+        </tr>
+        <tr>
+            <td><img id="imgEgpyt" src="images/egpyt.png" /></td>
+            <td><img id="imgFrance" src="images/france.png" /></td>
+            <td><img id="imgIndia" src="images/india.png" /></td>
+            <td><img id="imgIndonesia" src="images/indonesia.png" /></td>
+        </tr>
+        <tr>
+            <td><img id="imgIraq" src="images/iraq.png" /></td>
+            <td><img id="imgItaly" src="images/italy.png" /></td>
+            <td><img id="imgJapan" src="images/japan.png" /></td>
+            <td><img id="imgMexico" src="images/mexico.png" /></td>
+        </tr>
+        
+    </table>
+    
+       <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#imgArgentina").on( {
+                "click":
+                function () { 
+                    $("#imgArgentina").attr("src", "argentina1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgArgentina").attr("src", "images/argentina.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgAus").on( {
+                "click":
+                function () { 
+                    $("#imgAus").attr("src", "aus1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgAus").attr("src", "images/aus.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgBrzail").on( {
+                "click":
+                function () { 
+                    $("#imgBrzail").attr("src", "brzail1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgBrzail").attr("src", "images/brzail.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgChina").on( {
+                "click":
+                function () { 
+                    $("#imgChina").attr("src", "china1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgChina").attr("src", "images/china.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    
+        <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgEgpyt").on( {
+                "click":
+                function () { 
+                    $("#imgEgpyt").attr("src", "egpyt1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgEgpyt").attr("src", "images/egpyt.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgFrance").on( {
+                "click":
+                function () { 
+                    $("#imgFrance").attr("src", "france1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgFrance").attr("src", "images/france.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgIndia").on( {
+                "click":
+                function () { 
+                    $("#imgIndia").attr("src", "india1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgIndia").attr("src", "images/india.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgIndonesia").on( {
+                "click":
+                function () { 
+                    $("#imgIndonesia").attr("src", "indonesia1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgIndonesia").attr("src", "images/indonesia.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgIraq").on( {
+                "click":
+                function () { 
+                    $("#imgIraq").attr("src", "iraq1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgIraq").attr("src", "images/iraq.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgItaly").on( {
+                "click":
+                function () { 
+                    $("#imgItaly").attr("src", "italy1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgItaly").attr("src", "images/italy.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgJapan").on( {
+                "click":
+                function () { 
+                    $("#imgJapan").attr("src", "japan1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgJapan").attr("src", "images/japan.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+       $(document).ready(function () {
+
+            $("#imgMexico").on( {
+                "click":
+                function () { 
+                    $("#imgMexico").attr("src", "mexico1.png");  
+                    console("mouse enter image");
+                },
+                "mouseout":
+                function () { 
+                    $("#imgMexico").attr("src", "images/mexico.png");  
+                    console("mouse leave image");
+                }
+            });
+        });
+    </script>
+
+    </div>
+
+</body>
+
+</html>

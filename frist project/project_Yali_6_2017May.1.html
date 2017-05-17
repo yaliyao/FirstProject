@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>world</title>
+ 
+    
+    <style>
+        .container {
+            margin: auto;
+            width: 58%;
+            border: 3px solid #73AD21;
+            height: 80%;
+            padding: 20px;
+        }
+    
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+    </style>
+    </head>
+    
+    <body>
+        <div class="page-header">
+        <h1 style="text-align: center">Countries Map Guess</h1>
+        </div>
+        
+        <div class="container">
+    <script type="text/javascript" src="jquery.js"></script>
+    <div>
+        <button style="height:30px;width:300px" onclick="myFunction()">Click Me To Get The Question</button>
+    
+        <h2 id="demo"></h2>
+        
+       
+            <img id="img0" src="images/argentina.png" />
+            <img id="img1" src="images/aus.png" />
+            <img id="img2" src="images/brzail.png" />
+            <img id="img3" src="images/china.png" />
+            <img id="img4" src="images/egpyt.png" />
+            <img id="img5" src="images/france.png" />
+            <img id="img6" src="images/india.png" />
+            <img id="img7" src="images/indonesia.png" />
+            <img id="img8" src="images/iraq.png" />
+            <img id="img9" src="images/italy.png" />
+            <img id="img10" src="images/japan.png" />
+            <img id="img11" src="images/mexico.png" />
+            
+    </div>
+        
+        
+    <script>
+        
+    var img = new Array();
+        img[0]="images/argentina.png";
+        img[1]="images/aus.png";
+        img[2]="images/brzail.png";
+        img[3]="images/china.png";
+        img[4]="images/egpyt.png";
+        img[5]="images/france.png";
+        img[6]="images/india.png";
+        img[7]="images/indonesia.png";
+        img[8]="images/iraq.png";
+        img[9]="images/italy.png";
+        img[10]="images/japan.png";
+        img[11]="images/mexico.png";
+    
+    var random = new Array();
+    
+    	//儲存產生的陣列
+ 
+	for(var i=0; i<img.length; i++) {
+		var rdm = 0;		//暫存的亂數
+ 
+		do {
+			var exist = false;			//此亂數是否已存在
+			rdm =  Math.floor(Math.random() * img.length);	//取得亂數
+ 
+			//檢查亂數是否存在於陣列中，若存在則繼續回圈
+			if(random.indexOf(rdm) != -1) exist = true;
+ 
+		} while (exist);	//產生沒出現過的亂數時離開迴圈
+ 
+		random[i] = rdm;
+	}
+    
+    for(var j=0; j<12; j++){
+        document.getElementById("img"+j).src = img[random[j]];
+    }    
+    
+    function myFunction() {
+         var countries = ["China", "Argentina", "Japan", "Australia",
+             "India", "Indonesia", "Iraq", "Italy",
+            "Brzail", "Egpyt", "France", "Mexico",
+        ];
+        
+        var rand = Math.floor(Math.random() * countries.length);
+        var concat = countries[rand];
+    
+      document.getElementById("demo").innerHTML = "Which One Is  " + (concat);
+        }
+    
+    </script>    
+    
+
+        
+    </body>
+</html>

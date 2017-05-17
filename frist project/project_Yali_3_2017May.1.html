@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title>worldmatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.toast.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("img").click(function() {
+            $(this).fadeOut("slow", function() {
+            });
+        });
+    });
+    </script>
+    <style>
+        .container {
+            margin: auto;
+            width: 70%;
+            border: 3px solid #73AD21;
+            height: 60%;
+            padding: 30px;
+        }
+    
+        img {
+            float: left;
+            margin: 10px 10px;
+        }
+        
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        
+        
+    </style>
+
+    
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Countries</h1>
+            <h2>which one is china</h2>
+        </div>
+        
+        <img id="imgArgentina" src="images/argentina.png" data-species="Argentina"  />
+        <img id="imgAus" src="images/aus.png" />
+        <img id="imgBrzail" src="images/brzail.png" />
+        <a href="https://en.wikipedia.org/wiki/China" target="_blank"/><img id="imgChina" src="images/china.png" />
+        <img id="imgEgpyt" src="images/egpyt.png" />
+        <img id="imgFrance" src="images/france.png" />
+        <img id="imgIndia" src="images/india.png" />
+        <img id="imgIndonesia" src="images/indonesia.png" />
+        <img id="imgIraq" src="images/iraq.png" />
+        <img id="imgItaly" src="images/italy.png" />
+        <img id="imgJapan" src="images/japan.png" />
+        <img id="imgMexico" src="images/mexico.png" />
+
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.toast.js"></script>
+
+
+
+</body>
+
+</html>
